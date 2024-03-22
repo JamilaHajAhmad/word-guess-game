@@ -1,2 +1,2 @@
 <h3>The Guess Word game using HTML,CSS and JS</h3>
-![image](https://data.textstudio.com/output/sample/animated/1/2/3/5/guess-3-5321.gif)
+![image](https://avatars.mds.yandex.net/get-games/1881371/2a00000183383531daa8601fa87c3e3eee78/orig)
