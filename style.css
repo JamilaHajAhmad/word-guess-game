@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #f44336;
+}
+body {
+    margin: 0;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 50px;
+    background-color: white;
+}
+.guess-game {
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1000px;
+}
+.key-color {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.key-color .key {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+.key-color .key-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+footer {
+    width: 100%;
+    color: white;
+    background-color: #333;
+    position: fixed;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    height: 20px;
+}
+.inputs div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    height: 30px;
+}
+span {
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 15px;
+}
+input {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-bottom: 3px solid #333;
+    font-size: 50px;
+    caret-color: var(--main-color);
+    background-color: white;
+    text-align: center;
+    margin: 0 5px;
+}
+.disabled-try {
+    opacity: 0.5;
+    pointer-events: none;
+}
+input:focus {
+    outline-color: #ccc;
+}
+.in-place {
+    background-color: #f89e13;
+    border-bottom: none;
+    color: white;
+}
+.not-in-place {
+    background-color: #18ba89;
+    border-bottom: none;
+    color: white;
+}
+.wrong {
+    background-color: #27303f;
+    border-bottom: none;
+    color: white;
+}
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 30px auto;
+    gap: 10px;
+}
+button {
+    border: none;
+    font-size: 25px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.check {
+    background-color: var(--main-color);
+    flex: 1; /* or flex-basis: 100% */
+}
+.hint {
+    background-color: #009688;
+    width: fit-content;
+}
+button:disabled {
+    background-color: black;
+    opacity: 0.4;
+    cursor: no-drop;
+}
+.message {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+.message span {
+    color: var(--main-color);
+}
